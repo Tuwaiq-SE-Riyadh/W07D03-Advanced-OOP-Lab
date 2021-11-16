@@ -27,8 +27,8 @@ public class Cheetah extends Animal{
 
     public String toString()
     {
-        return "This Cheetah has ["+super.getNumTeeth() +" Teeth]," +
-                " ["+super.getSpots() +" Spots], ["+super.getWeight() +
+        return "This Cheetah has ["+getNumTeeth() +" Teeth]," +
+                " ["+getSpots() +" Spots], ["+getWeight() +
                 " Weight], ["+Cheetah.cheetahSpeed +"km/h cheetahSpeed], and 3 Top Places are "+
                 Arrays.toString(this.cheetahTop3Places);
     }

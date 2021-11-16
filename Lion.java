@@ -17,8 +17,8 @@ public class Lion extends Animal{
 
     public void getDescription ()
     {
-        System.out.println("This Lion has ["+super.getNumTeeth() +" Teeth]," +
-                " ["+super.getSpots() +" Spots], ["+super.getWeight() +
+        System.out.println("This Lion has ["+getNumTeeth() +" Teeth]," +
+                " ["+getSpots() +" Spots], ["+getWeight() +
                 " Weight], ["+this.field +" Field]");
     }
 
