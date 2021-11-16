@@ -1,34 +1,32 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Cheetah extends Animal{
-    static int[];
+    static String[] type;
 
 
 
-    public Cheetah(int numTeeth, boolean spots, int weight) {
+    public Cheetah(int numTeeth, boolean spots, int weight,String[] type) {
         super(numTeeth, spots, weight);
+        this.type =type;
 
     }
 
-    public void  setType(String type){
-        if (this.getWeight()<80){
-            this.type = "cub";
-        }
-        else if (this.getWeight()<120){
-            this.type = "Female";
-        }
-        else if (this.getWeight()>=120){
-            this.type ="Male";
+    public void  setType(String[] type){
+        for (int i = 0; i <type.length ; i++) {
+            this.type[i] =type[i] ;
         }
 
     }
 
-    public String getType(){
+    public String[] getType(){
         return type;
     }
 
-    public void printAnimal(){
-        System.out.println("The Animal is Lion, Number Of Teeth is "+getNumTeeth()+", is it spots "+getSpots()+", it is weight is "+ getWeight()+ ", And it's type is "+getType());
+    public String toString() {
+        String output ="The Animal is Cheetah, Number Of Teeth is "+getNumTeeth()+", is it spots "+getSpots()+", it is weight is "+ getWeight()+ " types of cheetah "+ Arrays.toString(type);
+        return output;
     }
 }
 
