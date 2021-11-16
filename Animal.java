@@ -1,3 +1,4 @@
+package com.company;
 
 public class Animal {
 	private int numTeeth = 0;
