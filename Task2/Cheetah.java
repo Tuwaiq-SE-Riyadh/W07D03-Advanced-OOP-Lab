@@ -7,8 +7,8 @@ public class Cheetah extends Animal{
     public int arr[];
     private int age ;
 
-    public Cheetah(double weight, int age, int arr[]) {
-        super(weight);
+    public Cheetah(int numTeeth, boolean spots, int weight, int age, int arr[]) {
+        super(numTeeth,spots,weight);
         this.age = age;
         this.arr = arr;
 
@@ -28,7 +28,9 @@ public class Cheetah extends Animal{
         return "Cheetah{" +
                 "a=" + Arrays.toString(arr) +
                 ", age=" + age +
-                ", weight=" + weight +
+                ", numTeeth=" + getNumTeeth() +
+                ", spots=" + getSpots() +
+                ", weight=" + getWeight() +
                 '}';
     }
 }

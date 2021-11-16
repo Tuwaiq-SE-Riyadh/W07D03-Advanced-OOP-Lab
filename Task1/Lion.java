@@ -4,16 +4,16 @@ public class Lion extends Animal{
     public String type;
 
 
-    public Lion(double weight) {
-        super(weight);
+    public Lion(int numTeeth, boolean spots, int weight) {
+        super(numTeeth,spots,weight);
         setType();
     }
 
     public  void  setType(){
-        if(this.weight < 80){
+        if(getWeight() < 80){
             this.type = "cub";
         }
-        else if(this.weight < 120){
+        else if(getWeight() < 120){
             this.type = "female";
         }
         else {
@@ -25,6 +25,8 @@ public class Lion extends Animal{
     public String toString() {
         return "Lion{" +
                 "type='" + type + '\'' +
-                "weight='" + weight + '\'' +'}';
+                "numTeeth='" + getNumTeeth() + '\'' +
+                "spots='" + getSpots() + '\'' +
+                "weight='" + getWeight() + '\'' +'}';
     }
 }
