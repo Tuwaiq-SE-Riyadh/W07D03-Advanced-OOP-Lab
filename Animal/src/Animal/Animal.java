@@ -1,3 +1,4 @@
+package Animal;
 
 public class Animal {
 	private int numTeeth = 0;
