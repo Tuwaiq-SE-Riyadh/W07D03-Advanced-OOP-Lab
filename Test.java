@@ -1,3 +1,4 @@
+package AdvanceOopLab;
 
 public class Test {
 
@@ -8,6 +9,11 @@ public class Test {
 		
 		Lion lion2 = new Lion(16, false, 137);
 		lion2.prinLlionInfo();
+		
+		String[] locations = {"Africa","Iran"};
+		Cheetah cheetah = new Cheetah(10, true, 50, locations);
+		Cheetah.speed = "90 km/h";
+		System.out.println(cheetah.toString());
 	}
 
 }
