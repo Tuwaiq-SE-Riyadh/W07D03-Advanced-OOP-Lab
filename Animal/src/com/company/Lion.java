@@ -20,5 +20,6 @@ public void print(){
     System.out.println(getNumTeeth());
     System.out.println(getSpots());
     System.out.println(getWeight());
+    System.out.println(lionType);
 }
 }
