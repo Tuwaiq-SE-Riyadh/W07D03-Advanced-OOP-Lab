@@ -9,7 +9,8 @@ public class Main {
         lionOne.print();
 
         Cheetah cheetahOne = new Cheetah(22,false,10, 12);
-        cheetahOne.print();
+        cheetahOne.setChild(3);
+        System.out.println(cheetahOne);
     }
 }
 
