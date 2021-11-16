@@ -5,16 +5,13 @@ public class Cheetah extends Animal{
     static int age;
     static int child [] = new int[1];
 
-    public Cheetah(int numTeeth, boolean spots, int weight, int age) {
+    public Cheetah(int numTeeth, boolean spots, int weight, int age, int ch) {
         super(numTeeth, spots, weight);
         this.age = age;
+        child[0] = ch;
     }
 
-    public void setChild(int numberChild){
 
-        child[0] = numberChild;
-
-    }
     public String toString(){
 
         System.out.println();
