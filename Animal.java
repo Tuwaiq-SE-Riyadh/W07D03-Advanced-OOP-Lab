@@ -1,3 +1,5 @@
+package AdvanceOopLab;
+
 
 public class Animal {
 	private int numTeeth = 0;
@@ -36,3 +38,4 @@ public class Animal {
 
 	
 }
+
