@@ -14,5 +14,14 @@ public class Main {
         Lion lion3 = new Lion(10,false,88);
         lion3.setType();
         System.out.println(lion3.toString());
+
+        String[] colors = {"brown","black"};
+        Cheetah cheetah = new Cheetah(10,false,88,"black",colors);
+
+        System.out.println(cheetah.toString());
+        cheetah.setColor(colors[0]);
+        System.out.println(cheetah.toString());
+
     }
+
 }
